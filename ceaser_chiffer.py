@@ -1,4 +1,4 @@
-def encrypt(text,s): {
+def encrypt(text,s):
     result = ""
     # transverse the plain text
     for i in range(len(text)):
@@ -11,7 +11,6 @@ def encrypt(text,s): {
         else:
             result += chr((ord(char) + s - 97) % 26 + 97)
     return result
-}
     #check the above function
 text = "CEASER CIPHER DEMO"
 s = 4
